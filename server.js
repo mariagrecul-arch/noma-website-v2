@@ -31,7 +31,6 @@ const TYPES = {
 const SECURITY_HEADERS = {
   'X-Content-Type-Options': 'nosniff',
   'Referrer-Policy': 'strict-origin-when-cross-origin',
-  'X-Frame-Options': 'SAMEORIGIN',
   'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
   'Content-Security-Policy': [
     "default-src 'self'",
@@ -40,7 +39,7 @@ const SECURITY_HEADERS = {
     "font-src 'self' https://fonts.gstatic.com",
     "script-src 'self'",
     "connect-src 'self'",
-    "frame-ancestors 'self'",
+    "frame-ancestors 'self' https://webdesign.wallutt.com",
   ].join('; '),
 };
 
